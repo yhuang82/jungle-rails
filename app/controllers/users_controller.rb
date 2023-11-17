@@ -6,7 +6,7 @@ class UsersController < ApplicationController
     user = User.new(user_params)
 
     if !user.valid?
-      message = user.error.full_messages.join(" ")
+      message = user.errors.full_messages.first
       redirect_to '/signup', notice: message
     else
       user.save

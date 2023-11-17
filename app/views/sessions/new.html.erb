@@ -1,2 +1,15 @@
-<h1>Sessions#new</h1>
-<p>Find me in app/views/sessions/new.html.erb</p>
+<div class="container">
+  <h1>Login</h1>
+  <% flash.each do |type, msg| %>
+    <div class="alert alert-danger">
+      <%= msg %>
+    </div>
+  <% end %>
+  <%= form_tag '/login', method: :post, class: 'form-signin' do %>
+    <%= label_tag :email%>
+    <%= email_field_tag :email, nil, class: 'form-control' %>
+    <%= label_tag :password%>
+    <%= password_field_tag :password, nil, class: 'form-control' %>
+    <%= submit_tag 'Login', class: 'btn btn-primary' %>
+  <% end %>
+</div>
