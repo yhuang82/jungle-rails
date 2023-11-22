@@ -23,15 +23,15 @@ This project aimed to equip the team with comprehensive knowledge and skills in 
 The project highlights collaborative efforts in feature implementation, issue resolution, and security reinforcement while upholding code quality and standards.
 # Results
 - **Admin login**
-!["Admin login"]()
+!["Admin login"](https://github.com/yhuang82/jungle-rails/blob/master/docs/photo-adminLogin.png)
 - **Soldout badge**
-!["Soldout badge"]()
+!["Soldout badge"](https://github.com/yhuang82/jungle-rails/blob/master/docs/photo-soldoutBadge.png)
 - **Product detail**
-!["Product detail"]()
+!["Product detail"](https://github.com/yhuang82/jungle-rails/blob/master/docs/photo-productDetail.png)
 - **Invalid login**
-!["Invalid login"]()
+!["Invalid login"](https://github.com/yhuang82/jungle-rails/blob/master/docs/photo-invalidLogin.png)
 - **Checkout order summary**
-!["Checkout order summary"]()
+!["Checkout order summary"](https://github.com/yhuang82/jungle-rails/blob/master/docs/photo-checkoutOrderSummary.png)
 
 
 # Setup
