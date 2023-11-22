@@ -1,8 +1,40 @@
 # Jungle
-
+## Goals
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+This project aimed to equip the team with comprehensive knowledge and skills in Ruby and the Rails framework. The primary objectives included mastering code navigation in an existing codebase, implementing new features using unfamiliar techniques, and adapting to a new paradigm, language, and framework.
 
-## Setup
+
+# Project Contributions
+
+## Implemented Key Features
+- **Sold Out Badge**: Added a badge to indicate products with zero quantity on the product list page.
+- **Admin Categories**: Enabled category management for admins and streamlined routes for product category association.
+- **User Authentication**: Developed a robust authentication system for seamless user sign-up, sign-in, and secure password storage.
+- **Enhanced Order Details**: Improved the order page by displaying comprehensive item details, order amounts, and customer email.
+
+## Bug Fixes and Security Measures
+- **Admin Security**: Implemented HTTP authentication to secure admin functionalities.
+- **Enhanced User Experience**: Provided friendly messages and guidance for users, especially during errors like checking out with an empty cart.
+
+## Collaborative Achievements
+- **Team Adaptability**: Navigated the existing codebase, assimilated new techniques, and integrated solutions harmoniously.
+- **Adherence to Standards**: Maintained code integrity and consistency with established style guides.
+
+The project highlights collaborative efforts in feature implementation, issue resolution, and security reinforcement while upholding code quality and standards.
+# Results
+- **Admin login**
+!["Admin login"]()
+- **Soldout badge**
+!["Soldout badge"]()
+- **Product detail**
+!["Product detail"]()
+- **Invalid login**
+!["Invalid login"]()
+- **Checkout order summary**
+!["Checkout order summary"]()
+
+
+# Setup
 
 1. Run `bundle install` to install dependencies
 2. Create `config/database.yml` by copying `config/database.example.yml`
