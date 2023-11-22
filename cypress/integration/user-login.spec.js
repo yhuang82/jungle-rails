@@ -14,9 +14,10 @@ describe("User Create", () => {
     // signup page
     cy.contains("Signup").click();
     // fill in the form and check user auth
+    const uniqueEmail = `albert+${Date.now()}@gmail.com`; 
     cy.get('[name="user[first_name]"]').type("Albert");
     cy.get('[name="user[last_name]"]').type("Huang");
-    cy.get('[name="user[email]"]').type("albert@gmail.com");
+    cy.get('[name="user[email]"]').type(`${uniqueEmail}`);
     cy.get('[name="user[password]"]').type("password");
     cy.get('[name="user[password_confirmation]"]').type("password");
 
@@ -27,7 +28,7 @@ describe("User Create", () => {
     
         // fill in the form and check user auth
 
-    cy.get("[id=email]").type("albert@gmail.com");
+    cy.get("[id=email]").type(`${uniqueEmail}`);
     cy.get("[id=password]").type("password");
     cy.get("[name=commit]").click();
     cy.contains("Hello, Albert");
