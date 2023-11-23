@@ -9,6 +9,7 @@ class OrdersController < ApplicationController
     order  = create_order(charge)
 
     if order.valid?
+      update_product_quantity(order) # Update product quantity
       empty_cart!
       redirect_to order, notice: 'Your Order has been placed.'
     else
@@ -54,6 +55,14 @@ class OrdersController < ApplicationController
     end
     order.save!
     order
+  end
+
+  def update_product_quantity(order)
+    order.line_items.each do |line_item|
+      product = line_item.product
+      product.update(quantity: product.quantity - line_item.quantity)
+      @product = product # Update the @product instance
+    end
   end
 
 end
